@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSDOM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        ul{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <ul id = 'todo-list'></ul>
+
+    <!-- // TEMPLATE ->  -->
+    <template id="todoTemplate">
+        <li>
+            <div class="todo alert alert-secondary" role="alert">
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="todo__title mb-0">TODO TITLE</p>
+                <div class="todo__actions">
+                  <button type="button" class="btn btn-success mark-as-done">
+                    Finish
+                  </button>
+                  <button type="button" class="btn btn-danger remove">
+                    Remove
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+    </template>
+    <!-- // Phan biet innertext. innerHTML,textContent
+    <div>
+        <span>Hiihi</span>
+        <br/>
+        <span>Hahahah</span>
+        <h1 style="border: 0ch;">Teststs</h1>
+    </div> -->
+    <script src="js/render-element.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
